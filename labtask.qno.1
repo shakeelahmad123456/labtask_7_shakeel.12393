@@ -1,0 +1,12 @@
+# labtask_7_shakeel.12393 qnoo,1
+start at the root: Begin the search at the root of the BST.
+
+Compare with the current node: Compare the target value with the value at the current node.
+
+Navigate left or right: If the target value is less than the current node's value, move to the left subtree. If it's greater, move to the right subtree.
+
+Repeat until found or no more nodes: Repeat steps 2 and 3 until you find the target value or reach a leaf node.
+
+The worst-case time complexity for searching in a BST is O(h), where h is the height of the tree. In a well-balanced BST, the height is logarithmic in the number of nodes (h = log(n)), resulting in an average-case time complexity of O(log n). However, in the worst case, the tree could be skewed, resulting in a height of n (where n is the number of nodes), and the time complexity becomes O(n).
+
+It's crucial to note that maintaining a balanced BST, either through careful construction or using self-balancing techniques like AVL trees or Red-Black trees, helps ensure that the height remains logarithmic. This preserves the efficient average-case time complexity of O(log n) for search operations.
